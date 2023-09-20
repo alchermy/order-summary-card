@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%); 
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat:no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    margin: 1rem;
+    max-width: 390px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.top img {
+    width: 100%;
+    height: 100%;
+    
+}
+.bottom-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+}
+.bottom-info h1{
+    font-size: 24px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%); 
+    margin-top: 1rem;
+}
+.bottom-info .text {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    width: 100%;
+    margin-top: 1.2rem;
+    line-height: 1.5;
+}
+.plan{
+    display: flex;
+    margin-top: 1.5rem;
+    background-color:  hsl(225, 100%, 98%);
+    padding: 1rem 1.4rem;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan-text{
+    margin-right: 2rem;
+}
+.plan-text .title {
+    font-weight: 700;
+}
+.plan-text .price{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin-top: 0.2rem;
+}
+.plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.plan a:hover{
+    color: hsl(245, 75%, 70%);
+    text-decoration: none;
+}
+.btn-sub{
+    background: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px rgba(131, 121, 236, 0.5);
+}
+
+.btn-sub:hover{
+    background: hsl(245, 75%, 70%);
+}
+
+.btn-cel{
+    margin-top: 1.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+.btn-cel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+footer { 
+
+    font-size: 11px; 
+    text-align: center; 
+}
+footer a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (max-width:500px){
+    body{
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+}
